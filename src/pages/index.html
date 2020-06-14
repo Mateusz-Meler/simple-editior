@@ -6,18 +6,27 @@
     <title>Simple editor</title>
   </head>
   <body>
-    <header class="header">
-      <h1>My editor</h1>
+    <header>
+      <h1 class="header">My editor</h1>
     </header>
-    <div class="box"> </div>
+
+    <div class="box">
       <form>
         <p>
-          <label for="yourText">Napisz coś:</label>
-          <textarea id="yourText" name="yourText">
-</textarea
+          <label for="yourText"></label>
+          <textarea
+            class="area"
+            id="yourText"
+            name="yourText"
+            placeholder="Type anything..."
           >
+          </textarea>
         </p>
       </form>
-   
+      <div class="buttons">
+        <button class="save">Save</button>
+        <button class="load">Load</button>
+      </div>
+    </div>
   </body>
 </html>

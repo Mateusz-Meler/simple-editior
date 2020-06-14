@@ -1,45 +1,61 @@
 body {
-  position: relative;
-  width: 1420px;
-  height: 1358px;
-  background: #a1a4b1;
-  mix-blend-mode: normal;
+  background: #a7acae;
+  font-family: Open Sans;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .header {
-  position: absolute;
-  width: 204px;
-  height: 64px;
-  left: 608px;
-  top: 352px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 64px;
+  font-size: 4opx;
 }
 
 .box {
-  display: flex;
-  position: absolute;
   width: 734px;
   height: 382px;
-  left: 340px;
-  top: 429px;
-  background: #c4c4c4;
-  mix-blend-mode: soft-light;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 23px;
+  border-radius: 22px;
+  background: #a7acae;
+  box-shadow: inset 14px -14px 28px #8c9092, inset -14px 14px 28px #c2c8ca;
 }
 
-textarea {
-  position: absolute;
+.area {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 64px;
+  font-size: 25px;
   width: 608px;
   height: 264px;
-  left: 406px;
-  top: 472px;
+  border: none;
+  border-radius: 22px;
+  background: #a7acae;
+  box-shadow: inset 27px -27px 53px #818486, inset -27px 27px 53px #cdd4d6;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.save {
+  background: #962121;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 64px;
+  height: 40px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.load {
+  background: #219653;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  width: 65px;
+  height: 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-right: 20px;
 }

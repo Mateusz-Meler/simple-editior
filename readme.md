@@ -1,3 +1,4 @@
+![cover](./public/og.png)
 
 # Simple editor 
 

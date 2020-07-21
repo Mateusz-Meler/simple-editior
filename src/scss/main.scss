@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  margin: 0;
+}
+
 main {
   background: #a7acae;
   font-family: Open Sans;
@@ -16,10 +20,11 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding: 16px;
 }
 
 .header {
-  font-size: 4opx;
+  font-size: 40px;
 }
 
 .box {
@@ -28,25 +33,37 @@ main {
   border-radius: 22px;
   background: #a7acae;
   box-shadow: inset 14px -14px 28px #8c9092, inset -14px 14px 28px #c2c8ca;
+  position: relative;
+  padding: 16px;
+  &__form {
+    margin-top: 40px;
+    text-align: center;
+  }
 }
 
 .area {
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  display: flex;
-  margin-top: 40px;
-  margin-left: 64px;
   font-size: 25px;
-  width: 608px;
-  height: 264px;
+  width: 631px;
+  height: 200px;
   border: none;
   border-radius: 38px;
   background: #a7acae;
   box-shadow: inset 6px 6px 11px #828688, inset -6px -6px 11px #ccd2d4;
 }
 
+textarea {
+  max-width: 90%;
+  max-height: 200px;
+}
+
 .buttons {
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
+  right: 10px;
+  bottom: 30px;
+  margin: 10px;
 }
 
 .save {
@@ -71,4 +88,21 @@ main {
   background: #a7acae;
   box-shadow: inset 5px 5px 10px #8e9294, inset -5px -5px 10px #c0c6c8;
   margin-right: 20px;
+}
+
+@media (max-width: 767px) {
+  .box {
+    width: 100%;
+    margin: 0 16px;
+  }
+}
+
+@media (max-width: 400px) {
+  .area {
+    font-size: 18px;
+}
+
+.header {
+  font-size: 30px;
+}
 }

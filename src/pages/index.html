@@ -26,32 +26,28 @@
       content="https://mateusz-meler.github.io/simple-editior/og.png"
     />
   </head>
-  <!-- uncomment the line below to enable PWA  -->
-  <!-- <link rel="manifest" href="manifest.json" /> -->
 
   <body>
     <main>
       <header>
         <h1 class="header">My editor</h1>
       </header>
-      <div class="box">
-        <form>
-          <p>
-            <label for="yourText"></label>
-            <textarea
-              id="yourText"
-              name="yourText"
-              class="area area--js"
-              placeholder="Type anything ..."
-            ></textarea>
-          </p>
-       
+<div class="box">
+      <form class="box__form">
+        <textarea
+          class="area area--js"
+          id="yourText"
+          name="yourText"
+          placeholder="Type anything ..."
+        ></textarea>
         <div class="buttons">
           <button class="save save--js">Save</button>
-          <button class="load load--js">Load<span class="info--js"></span></button>
+          <button class="load load--js">
+            Load<span class="info--js"></span>
+          </button>
         </div>
       </form>
-      </div>
+    </div>
     </main>
   </body>
 </html>
